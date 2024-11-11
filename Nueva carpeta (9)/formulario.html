@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subir archivo</title>
+</head>
+<body>
+    <form action="subir_archivo.php" method="post" enctype="multipart/form-data">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="description">Descripción:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="privacy">Privacidad:</label>
+        <select id="privacy" name="privacy">
+            <option value="public">Pública</option>
+            <option value="private">Privada</option>
+        </select><br><br>
+        <label for="file">Archivo:</label>
+        <input type="file" id="file" name="file"><br><br>
+        <input type="submit" value="Subir archivo">
+    </form>
+</body>
+</html>
